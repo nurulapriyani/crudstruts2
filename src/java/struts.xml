@@ -1,0 +1,30 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+     <package name="default" extends="struts-default">
+    </package>
+
+    <package name="lis" extends="struts-default">
+        <action name="listmhs" class="com.nurul.model.mhs.listMhs">
+            <result name="success">/listmhs.jsp</result>
+            <result name="error">/listmhs.jsp</result>
+        </action>
+       <action name="deletemhs" class="com.nurul.model.mhs.deleteMhs">
+            <result name="success">/succdelete.jsp</result>
+            <result name="error">/succdelete.jsp</result>
+        </action>
+        <action name="addmhs" class="com.nurul.model.mhs.addMhs">
+            <result name="success">/addmhs.jsp</result>
+            <result name="error">/addmhs.jsp</result>
+        </action>
+         <action name="editmhs" class="com.nurul.model.mhs.editMhs">
+            <result name="success">/editmhs.jsp</result>
+            <result name="error">/editmhs.jsp</result>
+        </action>
+    </package>
+</struts>
+ 
+       
